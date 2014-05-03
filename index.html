@@ -1,1 +1,16 @@
-Hello
+---
+layout: default
+title: Log
+---
+ 
+<ul class="entries">
+  {% for post in site.posts %}
+ 
+	<div class="post">
+  	  <h3>{{ post.title }}</h3>
+  	  <p>{{ post.content }}</p>
+      <hr />
+	</div>
+ 
+  {% endfor %}
+</ul>

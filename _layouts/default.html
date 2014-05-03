@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset=utf-8 />
-  <title> log of thoughts  Log |  </title>
+  <title> log of thoughts {% if page.title %} {{ page.title }} | {% endif %} </title>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
@@ -13,18 +13,7 @@
       <h1>log of thoughts</h1>
     <header>
 
-    <ul class="entries">
-  
- 
-	<div class="post">
-  	  <h3>Hello</h3>
-  	  <p><p>First post so far.</p></p>
-      <hr />
-	</div>
- 
-  
-</ul>
-
+    {{ content }}
 
   </div>
 </body>
